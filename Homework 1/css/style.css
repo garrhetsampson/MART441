@@ -1,0 +1,226 @@
+body, html {
+    height: 100%;
+}
+
+div{ 
+    text-align: left;
+    line-height: 1.45em;
+    font-family: Basecamp, sans-serif;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+h1{   
+	text-align: center;
+    font-family: GOODNEWS, sans-serif;
+	color: green;
+    font-size: 40px;
+    text-indent: 10px;
+    font-weight:700;
+}
+
+
+h3, h5{
+    text-align: center;
+    font-family: GOODNEWS, sans-serif;
+    
+}
+
+.opening-paragraph{
+    color: #1c1c1c;
+    font-size: 20px;
+    text-indent: 10px;
+    font-weight:700;
+}
+
+.opening-paragraph::first-line{
+    font-size: 30px;
+}
+.second-paragraph{
+    font-size: 16px;
+}
+
+#book_info{
+    text-decoration: none;
+    font-family: Basecamp, sans-serif;
+}
+#book_info:hover{
+    font-family:  Basecamp, sans-serif;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+table{
+    border: 1px solid black;
+    font-family:  GOODNEWS, sans-serif;
+    font-weight: 700;
+}
+
+p{
+    font-family:  Basecamp, sans-serif;
+}
+
+/* Set your header design: */
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #1c1c1c;
+    font-family: GOODNEWS;
+    text-transform: uppercase;
+    margin-top: 0;
+    height: 4em;
+    width: 100%;
+    text-align: left;
+}
+
+/* Set the layout of the menu: */
+.menu-item {
+    display: inline-block;
+    margin: 1em .2em;
+    min-width: 6em;
+    text-align: center;
+    background-color: #1c1c1c;
+    padding: 0.5em 1em;
+}
+
+/* Style the links: */
+.menu-item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-item:hover {
+    background-color: gray;
+   
+}
+
+/* Add a dropdown feature: */
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    border: 1px solid #000;
+    margin: 0.5em 0 0 -1em;
+    color: #000;
+    background-color: #fff;
+    z-index: 1;
+}
+.dropdown-content a {
+    color: #000;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Style dropdown item display: */
+.dropdown-item {
+    display: block;
+    text-align: left;
+    margin: 0;
+    padding: 0.5em 1em 0.5em 1em;
+    min-width: 5.9em;
+}
+
+.dropdown-item:hover, .dropdown-item:hover a {
+    color: black;
+    background-color: #a2a2a2;
+}
+
+.firstimage{
+    float: center;
+}
+
+
+/* For width 600px and larger: */
+@media only screen and (min-width: 600px) {
+    .firstimage{
+        content:url("../images/firstimage.jpg");
+    }
+}
+
+.secondimage{
+    float:right;
+    content:url("../images/secondimage.jpg");
+}
+
+/* For width 600px and larger: */
+@media only screen and (min-width: 600px) {
+    .secondimage{
+        float:right;
+        content:url("../images/secondimage.jpg");
+    }
+}
+
+.thirdimage{
+    margin: auto;
+    content:url("../images/thirdimage.jpg");
+}
+
+/* For width 600px and larger: */
+@media only screen and (min-width: 600px) {
+    .thirdimage{
+        margin: auto;
+        content:url("../images/thirdimage.jpg");
+    }
+}
+
+
+/* For width 600px and larger: */
+@media only screen and (min-width: 600px) {
+
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.contactus{
+    width:50%;
+    margin-left: 25%;
+    
+}
+
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/secondimage.jpg");
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
